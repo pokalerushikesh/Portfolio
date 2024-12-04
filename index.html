@@ -9,7 +9,7 @@
 <body>
     <header>
         <h1>Rushikesh Pokale</h1>
-        <p>Data Scientist | Business Analyst | Data Analyst </p>
+        <p>Data Scientist | Business Analyst | Data Analyst</p>
     </header>
     <nav>
         <ul>
@@ -21,22 +21,55 @@
     </nav>
     <section id="projects">
         <h2>Projects</h2>
-        <!-- Add your projects here -->
+        <div class="project-card">
+            <h3>Project 1: Data Visualization</h3>
+            <p>Developed a dashboard for real-time data insights using Python and Tableau.</p>
+            <a href="#" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Project 2: Predictive Analytics</h3>
+            <p>Built a predictive model using machine learning to forecast sales.</p>
+            <a href="#" target="_blank">View Project</a>
+        </div>
     </section>
     <section id="experience">
         <h2>Professional Experience</h2>
-        <!-- Add your experience here -->
+        <div class="experience-item">
+            <h3>Data Scientist - XYZ Company</h3>
+            <p>Duration: Jan 2020 - Present</p>
+            <ul>
+                <li>Implemented machine learning models for customer segmentation.</li>
+                <li>Automated data pipelines, reducing processing time by 50%.</li>
+            </ul>
+        </div>
+        <div class="experience-item">
+            <h3>Business Analyst - ABC Corp</h3>
+            <p>Duration: Jan 2018 - Dec 2019</p>
+            <ul>
+                <li>Conducted market research and provided actionable insights.</li>
+                <li>Created reports using Power BI and SQL.</li>
+            </ul>
+        </div>
     </section>
     <section id="education">
         <h2>Education</h2>
-        <!-- Add your education details here -->
+        <p>Bachelor of Science in Computer Science - University of Example (2015-2018)</p>
     </section>
     <section id="contact">
         <h2>Contact Me</h2>
-        <!-- Add contact form or details -->
+        <form action="mailto:your_email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
     <footer>
         <p>Copyright &copy; 2023 Rushikesh Pokale</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
