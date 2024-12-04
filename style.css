@@ -6,41 +6,102 @@ body {
     color: #333;
 }
 
-header, footer {
+header {
     background: #333;
     color: #fff;
     text-align: center;
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
 nav ul {
     list-style-type: none;
+    margin: 0;
     padding: 0;
     background: #222;
-    text-align: center;
-    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
+    margin: 0;
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
     padding: 15px 20px;
-    display: inline-block;
+    display: block;
+}
+
+nav ul li a:hover {
+    background: #555;
 }
 
 section {
     padding: 20px;
-    margin-top: 20px;
+    margin: 20px auto;
+    max-width: 800px;
     background: white;
-    border-bottom: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.project-card, .experience-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3, .experience-item h3 {
+    margin: 0 0 5px;
 }
 
 footer {
-    margin-top: 20px;
-    padding: 10px;
     background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li a {
+        text-align: center;
+    }
 }
